@@ -44,4 +44,6 @@ class plug:
             Server.Broadcast("My ad is enabled")
             if args < self.max_time and args > self.min_time:
                 self.client_time = args
-                Server.Broadcast(self.client_time)
+                self.check = 1
+                Server.Broadcast("Check is 1" + self.client_time)
+            
